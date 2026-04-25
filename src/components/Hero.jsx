@@ -30,7 +30,7 @@ export default function Hero() {
         <div className="mt-16 flex flex-col md:flex-row md:items-end justify-between gap-12">
           <p className="text-muted-purple text-lg md:text-xl max-w-md leading-relaxed font-light">
             Crafting high-performance <span className="text-beige italic">Full-Stack</span> applications 
-            and <span className="text-beige">Computer Vision</span> solutions.
+            and <span className="text-beige">Visual intelligence</span> systems.
           </p>
           
           <a 
