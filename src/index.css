@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+@theme {
+  --color-midnight: #1A1221;
+  --color-beige: #F5F5DC;
+  --color-haze: #3D2B4D;
+  --color-muted-purple: #A69CAB;
+
+  --font-sans: "Inter", "sans-serif";
+  --font-display: "Playfair Display", "serif";
+}
+
+:root {
+  background-color: var(--color-midnight);
+  color: var(--color-beige);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-sans);
+}
