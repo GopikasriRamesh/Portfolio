@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { TbDownload, TbMenu, TbX } from "react-icons/tb";
 import { motion, AnimatePresence } from 'framer-motion';
 import toast, { Toaster } from 'react-hot-toast';
+import resume from "../../public/resume.pdf"
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -17,8 +18,8 @@ export default function Navbar() {
   const handleDownload = () => {
     // Replace with your actual file path in the public folder
     const link = document.createElement('a');
-    // link.href = '/Gopika_Resume.pdf'; 
-    // link.download = 'Gopika_Sri_Ramesh_Resume.pdf';
+    link.href = resume; 
+    link.download = 'resume.pdf';
     link.click();
     toast.success('Resume downloaded successfully!', {
       style: {
